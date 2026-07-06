@@ -214,7 +214,7 @@ body {
 
   <!-- Custom Branding by Rahul -->
   <div class="rahul-branding">
-    <b>made with ❤️ by <span>@just.rahul.dev</span></b>
+    <b>made with ❤️ by <span>@thelegend_069</span></b>
   </div>
 
   <audio src="" id="linkmp3" class="sembunyi"></audio>
@@ -239,27 +239,27 @@ body {
 
     <!-- Hidden Stickers for later use -->
     <div class="kumpulanstiker">
-      <img src="./assets/cilukba.gif" id="fotostiker" />
-      <img src="./assets/pandapanah.gif" id="fotostiker1" />
-      <img src="./assets/pandaputih.gif" id="fotostikerPopup" />
-      <img src="./assets/weee.gif" id="fotostikerPopupCon" />
-      <img src="./assets/ngumpet.gif" id="fotostikerPopupCan" />
+      <img src="./cilukba.gif" id="fotostiker" />
+      <img src="./pandapanah.gif" id="fotostiker1" />
+      <img src="./pandaputih.gif" id="fotostikerPopup" />
+      <img src="./weee.gif" id="fotostikerPopupCon" />
+      <img src="./ngumpet.gif" id="fotostikerPopupCan" />
     </div>
 
     <!-- Swipeable Messages -->
     <div id='pergeseran'>
-      <p><b><img src="./assets/pusn.gif" /><span>Hey You 🤭❤️</span></b></p>
-      <p><b><img src="./assets/mikir.gif" /><span>I Just Want To <br>Say You 😆</span></b></p>
-      <p><b><img src="./assets/cilukba.gif" /><span>Hey it's your birthday today 😜</span></b></p>
-      <p><b><img src="./assets/g5.gif" /><span class="ft">Happy Birthday! 🥳</span></b></p>
-      <p><b><img src="./assets/mndkat.gif" /><span>Wishing you a long life<br />and good health always 🥰</span></b></p>
+      <p><b><img src="./pusn.gif" /><span>Hey Babe 🙃</span></b></p>
+      <p><b><img src="./mikir.gif" /><span>I Just Want To <br>Say You 😆</span></b></p>
+      <p><b><img src="./cilukba.gif" /><span>Hey it's your birthday today 😜</span></b></p>
+      <p><b><img src="./g5.gif" /><span class="ft">Happy Birthday! 🥳</span></b></p>
+      <p><b><img src="./mndkat.gif" /><span>Wishing you a long life<br />and good health always 🥰</span></b></p>
     </div>
 
     <!-- Final Message Container -->
     <blockquote id='bq'>
-      <p id="teksnim">Happy Level Up Day! 🥳</p>
+      <p id="teksnim">Happy Birthday! 🥳</p>
       <p id="kalimat">
-        <span id="klganti"><b>Just kidding haha 🤣</b><br /><br /></span>
+        <span id="klganti"><b>Just kidding 😝 haha </b><br /><br /></span>
         The main thing is that on your birthday, I hope you become<br />
         a better person and don't forget to keep up the spirit to pursue all<br />
         your wishes.. 🥳<br /><br />
@@ -369,17 +369,17 @@ body {
       document.getElementById("fotostiker").style.display = "none";
       
       var { isConfirmed: prtanya } = await swals.fire({
-        title: 'Do you want a gift? 🤭❤️',
+        title: 'Do you want a gift? 😏',
         imageUrl: document.getElementById("fotostikerPopup").src, 
         imageWidth: 100, imageHeight: 100,
         showCancelButton: true, confirmButtonText: 'Yes', cancelButtonText: 'No', cancelButtonColor: '#555',
       });
 
       if (prtanya) {
-        await swalst.fire({ title: 'Just kidding! 🤣', html: 'No gift for you 😜❤️', imageUrl: document.getElementById("fotostikerPopupCon").src, imageWidth: 100, imageHeight: 100 });
+        await swalst.fire({ title: 'Just kidding! 🤣', html: 'No gift for you 😡', imageUrl: document.getElementById("fotostikerPopupCon").src, imageWidth: 100, imageHeight: 100 });
         poinjwb = 1;
       } else {
-        await swals.fire({ title: 'Oh no!', html: 'Alright, if you don’t want it 😜❤️', imageUrl: document.getElementById("fotostikerPopupCan").src, imageWidth: 100, imageHeight: 100 });
+        await swals.fire({ title: 'Oh no!', html: 'Alright, if you don’t want it 😔', imageUrl: document.getElementById("fotostikerPopupCan").src, imageWidth: 100, imageHeight: 100 });
         poinjwb = 2;
       }
       bqmuncul();
